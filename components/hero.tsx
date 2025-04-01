@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="md:w-1/2 relative order-1 md:order-2">
             <div className="relative z-10">
               <Image
-                src="/images/illustration-features-tab-1.svg?height=400&width=600"
+                src="/images/illustration-hero.svg?height=400&width=600"
                 alt="Bookmark Manager Interface"
                 width={600}
                 height={400}
@@ -43,7 +43,7 @@ export default function Hero() {
                 priority
               />
             </div>
-            <div className="absolute right-0 bottom-0 w-full h-4/5 bg-blue-600 rounded-l-full -z-10 translate-x-1/4 translate-y-1/4"></div>
+            <div className="absolute right-0 bottom-0 w-full h-4/5 bg-primary-dark rounded-l-full -z-10 translate-x-1/4 translate-y-1/4"></div>
           </div>
         </div>
       </div>
