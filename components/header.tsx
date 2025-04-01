@@ -46,7 +46,7 @@ export default function Header() {
             </Link>
             <Button
               variant="destructive"
-              className="bg-red-500 hover:bg-red-600 text-white uppercase tracking-wide px-8"
+              className="bg-primary-red hover:bg-primary-red/80 hover:cursor-pointer text-white uppercase tracking-wide px-8"
             >
               Login
             </Button>

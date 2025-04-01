@@ -2,20 +2,11 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-@theme {
-  --color-primary-light: oklch(0.85 0.1 178); /* Lighter shade of blue */
-  --color-primary-dark: oklch(0.57 0.1816 271.81); /* Darker shade of blue */
-  --color-background: oklch(1 0 0); /* White */
-  --color-text: oklch(0.15 0 0); /* Dark text */
-  --color-text-light: oklch(0.4 0 0); /* Lighter text for descriptions */
-  --color-accent: oklch(0.72 0.16 30); /* Red for buttons */
-  --color-accent-dark: oklch(0.65 0.18 30); /* Darker red */
-  --color-neutral: oklch(0.9 0 0); /* Light gray for background elements */
-  --color-neutral-dark: oklch(0.6 0 0); /* Dark gray for borders and dividers */
-}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary-red: var(--primary-red);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -82,9 +73,10 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.57 0.1816 271.81);
+  --primary-red: oklch(0.68 0.1991 24.15);
   --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
+  --secondary: hsl(229, 31%, 21%);
+  --secondary-foreground: oklch(0.3 0.0501 273.36);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);

@@ -64,10 +64,10 @@ export default function Features() {
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 className={cn(
-                  "py-4 md:px-8 text-gray-600 border-b-2 md:w-auto w-full",
+                  "py-4 md:px-8 text-secondary-foreground bg-transparent border-b-2 md:w-auto w-full",
                   activeTab === tab.id
-                    ? "border-red-500 text-gray-900"
-                    : "border-transparent hover:text-gray-900"
+                    ? "border-red-500  text-secondary-foreground hover:bg-transparent"
+                    : "border-transparent hover:text-secondary-foreground/90 hover:bg-transparent"
                 )}
               >
                 {tab.label}
@@ -94,7 +94,9 @@ export default function Features() {
               {currentTab.title}
             </h3>
             <p className="text-gray-600">{currentTab.description}</p>
-            <Button className="bg-blue-600 hover:bg-blue-700">More Info</Button>
+            <Button className="bg-blue-600 hover:cursor-pointer hover:bg-primary-700">
+              More Info
+            </Button>
           </div>
         </div>
       </div>
